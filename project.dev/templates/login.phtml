@@ -1,26 +1,25 @@
 <!DOCTYPE>
 <html>
 <head>
+	<!--This is to make sure we can use jQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
 	<p>Login</p>
 	<form name="loginform" onSubmit="return validateForm();" action="./login" method="post">
 	    <label>Username</label>
-	    <input type="text" name="usr" placeholder="username"> 
+	    <input type="text" name="usr" placeholder="username">
 	    <label>Password</label>
 	    <input type="password" name="pword" placeholder="password">
 	    <input type="submit" value="Login"/>
 	</form>
-
-
 </body>
 <script>
     function validateForm() {
         var un = document.loginform.usr.value;
         var pw = document.loginform.pword.value;
         alert(un + pw);
-        // var username = "fluffykitten"; 
+        // var username = "fluffykitten";
         // var password = "junebug";
         // if ((un == username) && (pw == password)) {
         // 	alert ("You have successfully logged in");
